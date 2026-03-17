@@ -7,7 +7,6 @@ echo "----------------------------------"
 echo "CREANDO SERVIDOR ROTO PARA PRACTICA"
 echo "----------------------------------"
 
-
 echo "Creando usuarios..."
 useradd -m dev1
 echo "dev1:1234" | chpasswd
@@ -16,18 +15,13 @@ echo "front1:1234" | chpasswd
 useradd -m qa1
 echo "qa1:1234" | chpasswd
 
-
 echo "Usuarios creados (incompletos)"
-
 
 echo "Creando grupos..."
 groupadd backend
 groupadd qa
 
-
 echo "Grupos creados (incompletos)"
-
-
 
 echo "Creando estructura del proyecto..."
 mkdir -p /opt/taskflow
@@ -35,19 +29,15 @@ mkdir -p /opt/taskflow/frontend
 mkdir -p /opt/taskflow/mobile
 mkdir -p /opt/taskflow/logs
 
-
 echo "Estructura creada con errores"
-
 
 echo "Asignando propietarios incorrectos..."
 chown dev1:qa /opt/taskflow/frontend
-
 
 echo "Aplicando permisos incorrectos..."
 
 chmod 777 /opt/taskflow/frontend
 chmod 777 /opt/taskflow/mobile
-
 
 echo "Creando proceso que consume recursos..."
 sleep 10000 &
@@ -58,7 +48,6 @@ apt install nginx -y
 
 echo "Deteniendo servicio nginx..."
 systemctl stop nginx
-
 
 systemctl disable nginx
 echo "----------------------------------"
@@ -82,3 +71,4 @@ echo "12. permisos incorrectos en carpetas"
 echo ""
 echo "Los alumnos deben diagnosticar y arreglar el sistema."
 echo ""
+

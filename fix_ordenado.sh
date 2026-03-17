@@ -3,6 +3,28 @@
 # SCRIPT DE RESOLUCIÓN - SERVIDOR TASKFLOW
 # Solución a la Práctica Linux para DAM
 # ====================================================
+#
+echo "----------------------------------"
+echo "SERVIDOR ROTO CREADO"
+echo "----------------------------------"
+echo ""
+echo "Errores introducidos:"
+echo ""
+echo "1. Falta usuario dev2"
+echo "2. Usuario dev1 sin grupo backend"
+echo "3. Grupo frontend inexistente"
+echo "4. Carpeta /opt/taskflow/backend inexistente"
+echo "5. Propietarios incorrectos"
+echo "6. Permisos 777 inseguros"
+echo "7. Usuario sin acceso correcto"
+echo "8. Proceso sleep ejecutándose"
+echo "9. Servicio nginx detenido"
+echo "10. nginx no habilitado al inicio"
+echo "11. estructura incompleta"
+echo "12. permisos incorrectos en carpetas"
+echo ""
+echo "Los alumnos deben diagnosticar y arreglar el sistema."
+echo ""
 
 echo "Iniciando diagnóstico y reparación del sistema..."
 
