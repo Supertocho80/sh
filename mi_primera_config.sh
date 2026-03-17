@@ -71,4 +71,3 @@ echo "12. permisos incorrectos en carpetas"
 echo ""
 echo "Los alumnos deben diagnosticar y arreglar el sistema."
 echo ""
-

@@ -10,6 +10,7 @@ groupadd frontend
 
 echo "4. Carpeta /opt/taskflow/backend inexistente"
 mkdir -p /opt/taskflow/backend
+mkdir -p /opt/taskflow/frontend
 
 echo "5. Propietarios incorrectos"
 chown dev1:backend /opt/taskflow/backend
@@ -37,3 +38,4 @@ mkdir -p /opt/taskflow/database
 echo "12. permisos incorrectos en carpetas"
 chmod 770 /opt/taskflow/backend
 chmod 770 /opt/taskflow/database
+
